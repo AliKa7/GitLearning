@@ -52,6 +52,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Text(
             text = "Hello $name!",
         )
+        Text(
+            text = "Hello $name again!",
+        )
         Button(onClick = {}, modifier = Modifier
             .height(50.dp)
             .width(150.dp)) {
