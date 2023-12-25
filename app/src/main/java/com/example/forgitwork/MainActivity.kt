@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Another greeting", modifier = Modifier.background(Color.Black))
-                    println("")
+                    println("I vote for Trump because I am master")
                 }
             }
         }
