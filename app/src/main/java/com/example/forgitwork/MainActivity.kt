@@ -58,7 +58,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         }
 
         LazyColumn {
-            items(30) { item ->
+            items(100) { item ->
                 // Each item in the LazyColumn is a Text composable
                 Text(
                     text = "Item $item",
