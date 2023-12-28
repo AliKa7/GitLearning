@@ -37,6 +37,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Another greeting", modifier = Modifier.background(Color.Black))
+                    Greeting("Another greeting", modifier = Modifier.background(Color.Black))
+                    Greeting("Another greeting", modifier = Modifier.background(Color.Black))
                 }
             }
         }
@@ -58,24 +60,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             .height(50.dp)
             .width(150.dp)) {
             Text(text = "Click that sh..")
-        }
-
-        LazyRow {
-            items(120) { textItem ->
-                // Each item in the LazyColumn is a Text composable
-                Text(
-                    text = "Item $textItem",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(16.dp)
-                        .background(
-                            Color(Random.nextInt(), Random.nextInt(), Random.nextInt()),
-                            RoundedCornerShape(15.dp)
-                        )
-                        .padding(8.dp),
-                    color = Color.White,
-                )
-            }
         }
 
     }
